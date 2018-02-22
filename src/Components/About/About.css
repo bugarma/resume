@@ -1,0 +1,10 @@
+:local .container {
+    width: 1050px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+:local .avatar {
+    width: 200px;
+    border-radius: 50%;
+}
