@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Progress, Row, Col} from 'antd';
+import React from 'react';
+import {Progress, Row} from 'antd';
 import styled from 'styled-components';
 
 const Container = styled.div `

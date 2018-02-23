@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { skillData, timelineData } from './Components/About/Data';
 import About from './Components/About/About';
 
 class App extends Component {

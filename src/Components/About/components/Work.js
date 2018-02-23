@@ -48,7 +48,7 @@ const FlexBlock = styled.div`
 
 const timeline = timelineData.map(function(e, i){
     return (
-        <Container>
+        <Container key={i}>
             <LeftCol>
                 {e.date}
                 <Dot className="fa fa-circle" aria-hidden="true"/>
