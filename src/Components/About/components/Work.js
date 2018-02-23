@@ -27,7 +27,7 @@ const RightCol = styled.div`
 const Dot = styled.i`
     color: #78ABB9;
     position: absolute;
-    top: 4px;
+    top: 2px;
     right: -7px;
 
     &::before {
@@ -38,7 +38,8 @@ const Dot = styled.i`
 const Title = styled.div`
     color: #787878;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.05em;
 `;
 
 const FlexBlock = styled.div`
@@ -54,18 +55,20 @@ const timeline = timelineData.map(function(e, i){
             </LeftCol>
             <RightCol>
                 <Title>{e.title}</Title>
-                <FlexBlock>
-                    <div style={{marginRight: 10}}>
-                        <i className="fa fa-briefcase" aria-hidden="true"></i>
-                    </div>
-                    <div>{e.content}</div>
-                </FlexBlock>
-                <FlexBlock>
-                    <div style={{marginRight: 10}}>
-                        <i className="fa fa-wrench" aria-hidden="true"></i>
-                    </div>
-                    <div>{e.tools}</div>
-                </FlexBlock>
+                <div style={{margin: '10px 0'}}>
+                    <FlexBlock>
+                        <div style={{marginRight: 10}}>
+                            <i className="fa fa-briefcase" aria-hidden="true"></i>
+                        </div>
+                        <div>{e.content}</div>
+                    </FlexBlock>
+                    <FlexBlock>
+                        <div style={{marginRight: 10}}>
+                            <i className="fa fa-wrench" aria-hidden="true"></i>
+                        </div>
+                        <div>{e.tools}</div>
+                    </FlexBlock>
+                </div>
             </RightCol>
         </Container>
     );
