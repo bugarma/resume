@@ -24,7 +24,7 @@ class About extends Component {
                         </div>
                     </Col>
                     <Col span={16}>
-                        <h1>任精瑋, Aaron Jen</h1>
+                        <h1>任精瑋 Aaron Jen</h1>
                         <h3>勇於嘗試，持續學習，用程式便利自己的人生。</h3>
                         <h3>土木系畢業生，但想從事資訊相關的產業，有許多實作與實習的經驗，擅長的領域有網頁前後端工程、資料處理、機器學習。</h3>
                         <br/>
@@ -48,6 +48,7 @@ class About extends Component {
                         </h4>
                     </Col>
                 </Row>
+                <br/>
                 <Divider></Divider>
                 <br/>
 
@@ -64,12 +65,14 @@ class About extends Component {
                 </Row>
                 <br/>
                 <Divider></Divider>
+                <br/>
 
                 <h2>Experience</h2>
                 <br/>
                 <Work></Work>
                 <br/>
                 <Divider></Divider>
+                <br/>
 
                 <h2>Selected Courses & Projects</h2>
                 <br/>

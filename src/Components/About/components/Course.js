@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col } from 'antd';
+import { Row, Col, Button } from 'antd';
 
 const style = {
     img: {
@@ -19,7 +19,7 @@ const Course = ({ name, desc, link, photo }) => {
             <Col span={16}>
                 <h3>{name}</h3>
                 <p>{desc}</p>
-                <p>{link}</p>
+                <a><Button type="circle" icon="link" />&nbsp;&nbsp;{link}</a>
             </Col>
         </Row>
     );

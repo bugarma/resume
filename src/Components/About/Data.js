@@ -19,7 +19,7 @@ export const skillData = [
     },
     {
         title: '後端',
-        score: 60,
+        score: 70,
         tools: [
             'Node.js',
             'MongoDB, MySQL'
@@ -77,14 +77,14 @@ export const courseData = [
     },
     {
         name: '自然語言處理',
-        desc: '學習自然語言處理基礎與理論。期末Project使用NLTK、Gensim、Tensorflow...等Python Package建立語意模型，判斷飯店評論回復的面向與好壞。',
-        link: '',
+        desc: '學習自然語言處理基礎與理論。期末Project使用NLTK、Gensim、Tensorflow...等Python Package建立語意模型，判斷飯店評論回復的面向與好壞，模型的準確度約75％。',
+        link: 'https://github.com/bugarma/2017NLP',
         photo: './wordcloud.png'
     },
     {
         name: '視覺化技術在工程上之應用',
         desc: '學習遊戲引擎Unity來建立模型與場景，模擬工程上的情況。課程中學了許多Unity的使用與操作。期末Project為建立有重力的3D俄羅斯方塊，希望能讓玩的同學訓練3D空間概念與結構支撐。',
-        link: '',
+        link: 'http://vaec2017.weebly.com/team-032.html',
         photo: './unity.001.jpeg'
     }
 ]
