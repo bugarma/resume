@@ -12,12 +12,15 @@
   "homepage": "https://bugarma.github.io/resume",
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "rm -rf docs&&react-app-rewired build&&mv build docs",
+    "build": "react-app-rewired build",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "babel-plugin-import": "^1.6.5",
+    "gh-pages": "^1.1.0",
     "react-app-rewired": "^1.4.1"
   }
 }
