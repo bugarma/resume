@@ -9,6 +9,7 @@
     "react-scripts": "1.1.1",
     "styled-components": "^3.1.6"
   },
+  "homepage": "https://bugarma.github.io/resume",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "rm -rf docs&&react-app-rewired build&&mv build docs",
