@@ -35,9 +35,9 @@ class About extends Component {
                             </a>
                         </h4>
                         <h4>
-                            <a href="https://bugarma.github.io">
-                                <Button icon="layout" type="circle"/>&nbsp;&nbsp;
-                                https://bugarma.github.io
+                            <a href="https://www.linkedin.com/in/ching-wei-jen-a8818810a/">
+                                <Button icon="linkedin" shape="circle"/>&nbsp;&nbsp;
+                                https://www.linkedin.com/in/ching-wei-jen-a8818810a/
                             </a>
                         </h4>
                         <h4>

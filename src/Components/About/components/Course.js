@@ -19,7 +19,7 @@ const Course = ({ name, desc, link, photo }) => {
             <Col span={16}>
                 <h3>{name}</h3>
                 <p>{desc}</p>
-                <a><Button type="circle" icon="link" />&nbsp;&nbsp;{link}</a>
+                <a href={link}><Button type="circle" icon="link" />&nbsp;&nbsp;{link}</a>
             </Col>
         </Row>
     );
