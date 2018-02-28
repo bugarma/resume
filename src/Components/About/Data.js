@@ -46,7 +46,7 @@ export const timelineData = [
         date: 'Feb. 2017 - Jul. 2017',
         title: 'Bright Idea 實習',
         content: `前端：Vue.js C3.js 建立網頁畫面與圖表。\n後端：Python 爬取網頁資料作分析，Node.js、MongoDB 建立網站後台。`,
-        tools: 'Vue.js, C3.js, Python, Node.js',
+        tools: 'Vue.js, C3.js, Python, Scrapy, Node.js, MongoDB',
     },
     {
         date: 'Aug. 2016 - Mar. 2017',

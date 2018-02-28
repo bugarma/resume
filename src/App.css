@@ -11,3 +11,7 @@ img {
 body {
     min-width: 1080px;
 }
+
+.App {
+    font-size: 15px;
+}

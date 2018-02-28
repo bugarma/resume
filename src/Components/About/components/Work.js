@@ -5,7 +5,6 @@ import { timelineData } from '../Data';
 const Container = styled.div`
     display: flex;
     width: 100%;
-    font-size: 15px;
 `;
 
 const LeftCol = styled.div`
