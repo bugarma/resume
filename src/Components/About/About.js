@@ -28,6 +28,7 @@ class About extends Component {
                         <h3>勇於嘗試，持續學習，用程式便利自己的人生。</h3>
                         <h3>土木系畢業生，但想從事資訊相關的產業，有許多實作與實習的經驗，擅長的領域有網頁前後端工程、資料處理、機器學習。</h3>
                         <br/>
+                        <h4><Button icon="book" type="circle"/>&nbsp;&nbsp;台大土木系畢業 / 台大土木研究所電腦輔助工程組肄業</h4>
                         <h4>
                             <a href="https://github.com/bugarma">
                                 <Button icon="github" type="circle"/>&nbsp;&nbsp;
