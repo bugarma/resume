@@ -9,14 +9,16 @@ const style = {
         display: 'block',
         margin: 'auto',
         minHeight: 240
+    },
+    row: {
+        marginTop: 50,
     }
 }
 
 const Course = ({ name, desc, link, photo }) => {
     return (
-        <Row type="flex" align="middle">
-            <Col span={8}><img style={style.img} src={photo} alt=""/></Col>
-            <Col span={16}>
+        <Row style={style.row} type="flex" align="middle">
+            <Col span={24}>
                 <h3>{name}</h3>
                 <p>{desc}</p>
                 <a href={link}><Button type="circle" icon="link" />&nbsp;&nbsp;{link}</a>

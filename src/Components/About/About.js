@@ -76,10 +76,13 @@ class About extends Component {
                 <br/>
 
                 <h2>Selected Courses & Projects</h2>
-                <br/>
                 {data.courseData.map((e, i) => (
                     <Course key={i} name={e.name} desc={e.desc} link={e.link} photo={e.photo || ""}></Course>
                 ))}
+
+                <br/>
+                <br/>
+                <br/>
             </div>
         );
     }
