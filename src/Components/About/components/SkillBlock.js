@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import { Progress, Row } from 'antd';
+import { Progress, Row, Col } from 'antd';
 import styled from 'styled-components';
 
 const Container = styled.div `
@@ -12,18 +12,31 @@ const Container = styled.div `
 const List = styled.ul`
     padding-left: 15px;
     font-size: 1.1em;
-`
+`;
+
+const Content = styled.div`
+    flex: 1;
+
+    @media screen and (max-width: 768px){
+        margin-top: 12px;
+    }
+`;
 
 const SkillBlock = ({ title, tools, score }) => (
     <Container>
-        <Row type="flex" align="middle" gutter={48}>
-            <Progress type="circle" percent={score} format={(p) => p}/>
-            <div style={{flex: 1}}>
+        <Row type="flex" align="top" gutter={48}>
+            <Col xs={24} md={8}>
+                <Progress
+                    type="circle"
+                    percent={score}
+                    format={(p) => p}/>
+            </Col>
+            <Content>
                 <h2>{title}</h2>
                 <List>
                     {tools.map((t)=>(<li key={t}>{t}</li>))}
                 </List>
-            </div>
+            </Content>
         </Row>
     </Container>
 );
