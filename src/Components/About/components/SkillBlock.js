@@ -1,5 +1,6 @@
 import React from 'react';
-import {Progress, Row} from 'antd';
+import PropTypes from "prop-types";
+import { Progress, Row } from 'antd';
 import styled from 'styled-components';
 
 const Container = styled.div `
@@ -20,11 +21,17 @@ const SkillBlock = ({ title, tools, score }) => (
             <div style={{flex: 1}}>
                 <h2>{title}</h2>
                 <List>
-                    {tools.map((t, i)=>(<li key={i}>{t}</li>))}
+                    {tools.map((t)=>(<li key={t}>{t}</li>))}
                 </List>
             </div>
         </Row>
     </Container>
 );
+
+SkillBlock.propTypes = {
+    title: PropTypes.string.isRequired,
+    score: PropTypes.number.isRequired,
+    tools: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default SkillBlock;

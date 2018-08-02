@@ -15,24 +15,20 @@ const style = {
     }
 }
 
-const Course = ({ name, desc, link, photo }) => {
-    return (
-        <Row style={style.row} type="flex" align="middle">
-            <Col span={24}>
-                <h3>{name}</h3>
-                <p>{desc}</p>
-                <a href={link}><Button type="circle" icon="link" />&nbsp;&nbsp;{link}</a>
-            </Col>
-        </Row>
-    );
-}
-
+const Course = ({ name, desc, link }) => (
+    <Row style={style.row} type="flex" align="middle">
+        <Col span={24}>
+            <h3>{name}</h3>
+            <p>{desc}</p>
+            <a href={link}><Button type="circle" icon="link" />&nbsp;&nbsp;{link}</a>
+        </Col>
+    </Row>
+)
 
 Course.propTypes = {
     name: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
-    photo: PropTypes.string.isRequired,
 };
 
 export default Course;

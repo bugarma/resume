@@ -1,91 +1,63 @@
-import React, { Component } from 'react';
-import { Divider, Row, Col, Button } from 'antd';
-import avatar from './avatar.jpg';
-import style from './About.css';
+import React from 'react';
+import { Divider, Row, Col } from 'antd';
+import styled from "styled-components";
+
 import * as data from './Data';
+import Introduction from "./components/Introduction";
 import SkillBlock from './components/SkillBlock';
 import Work from './components/Work';
 import Course from './components/Course';
 
-class About extends Component {
-    render() {
-        const SkillBlocks = data.skillData.map((e, i) => {
-            return (
-                <SkillBlock key={i} title={e.title} tools={e.tools} score={e.score}></SkillBlock>
-            );
-        })
+const Container = styled.div`
+    max-width: 1050px;
+    margin: auto;
+    margin-top: 30px;
+`;
 
-        return (
-            <div className={style.container}>
-                <Row type="flex" justify='center' align='middle'>
-                    <Col span={8}>
-                        <div style={{textAlign: 'center'}}>
-                            <img className={style.avatar} src={avatar} alt=""/>
-                        </div>
-                    </Col>
-                    <Col span={16}>
-                        <h1>任精瑋 Aaron Jen</h1>
-                        <h3>勇於嘗試，持續學習，用程式便利自己的人生。</h3>
-                        <h3>土木系畢業生，但想從事資訊相關的產業，有許多實作與實習的經驗，擅長的領域有網頁前後端工程、資料處理、機器學習。</h3>
-                        <br/>
-                        <h4><Button icon="book" type="circle"/>&nbsp;&nbsp;台大土木系畢業 / 台大土木研究所電腦輔助工程組肄業</h4>
-                        <h4>
-                            <a href="https://github.com/bugarma">
-                                <Button icon="github" type="circle"/>&nbsp;&nbsp;
-                                https://github.com/bugarma
-                            </a>
-                        </h4>
-                        <h4>
-                            <a href="https://www.linkedin.com/in/ching-wei-jen-a8818810a/">
-                                <Button icon="linkedin" shape="circle"/>&nbsp;&nbsp;
-                                https://www.linkedin.com/in/ching-wei-jen-a8818810a/
-                            </a>
-                        </h4>
-                        <h4>
-                            <a href="mailto:aaron821124@gmail.com">
-                                <Button icon="mail" type="circle"/>&nbsp;&nbsp;
-                                aaron821124@gmail.com
-                            </a>
-                        </h4>
-                    </Col>
-                </Row>
-                <br/>
-                <Divider></Divider>
-                <br/>
+const About = () => {
+    const SkillBlocks = data.skillData.map((e) => (
+        <SkillBlock key={e.title} title={e.title} tools={e.tools} score={e.score} />
+    ))
 
-                <h2>Skills</h2>
-                <br/>
-                <Row type="flex">
-                    <Col span="12">{SkillBlocks[0]}</Col>
-                    <Col span="12">{SkillBlocks[1]}</Col>
-                </Row>
-                <br/>
-                <Row type="flex">
-                    <Col span="12">{SkillBlocks[2]}</Col>
-                    <Col span="12">{SkillBlocks[3]}</Col>
-                </Row>
-                <br/>
-                <Divider></Divider>
-                <br/>
+    return (
+        <Container>
+            <Introduction/>
+            <br/>
+            <Divider />
+            <br/>
 
-                <h2>Experience</h2>
-                <br/>
-                <Work></Work>
-                <br/>
-                <Divider></Divider>
-                <br/>
+            <h2>Skills</h2>
+            <br/>
+            <Row type="flex">
+                <Col span="12">{SkillBlocks[0]}</Col>
+                <Col span="12">{SkillBlocks[1]}</Col>
+            </Row>
+            <br/>
+            <Row type="flex">
+                <Col span="12">{SkillBlocks[2]}</Col>
+                <Col span="12">{SkillBlocks[3]}</Col>
+            </Row>
+            <br/>
+            <Divider />
+            <br/>
 
-                <h2>Selected Courses & Projects</h2>
-                {data.courseData.map((e, i) => (
-                    <Course key={i} name={e.name} desc={e.desc} link={e.link} photo={e.photo || ""}></Course>
-                ))}
+            <h2>Experience</h2>
+            <br/>
+            <Work />
+            <br/>
+            <Divider />
+            <br/>
 
-                <br/>
-                <br/>
-                <br/>
-            </div>
-        );
-    }
-}
+            <h2>Selected Courses & Projects</h2>
+            {data.courseData.map((e) => (
+                <Course key={e.name} name={e.name} desc={e.desc} link={e.link} photo={e.photo || ""} />
+            ))}
+
+            <br/>
+            <br/>
+            <br/>
+        </Container>
+    );
+};
 
 export default About;
