@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aaron Jen <aaronjen@jubo.health>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "chokidar": "^3.5.1",
+    "chokidar-cli": "^2.1.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "scripts": {
+    "build": "postcss src/styles.css -o dist/styles.css",
+    "css": "chokidar \"./src/**/*.css\" \"./tailwind.config.js\" -c \"NODE_ENV=development yarn run build\"",
+    "dev": "serve ."
+  }
+}

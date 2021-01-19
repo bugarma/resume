@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-300 py-12;
+  }
+  h1 {
+    @apply text-2xl border-gray-400 border-b-2 pb-2 mb-2;
+  }
+  h2 {
+    @apply text-lg;
+  }
+  h3 {
+    @apply mb-2 text-gray-600;
+  }
+  li {
+    @apply text-sm px-1;
+  }
+  p {
+    @apply p-1;
+  }
+}
+
+@layer components {
+  .wrapper {
+    height: 297mm;
+    width: 252mm;
+    margin: auto;
+    @apply shadow bg-gray-50 p-8 flex-col flex;
+  }
+  .divider {
+    width: 100%;
+    @apply border-b-2 border-gray-600;
+  }
+  .block {
+    @apply pb-4 px-4;
+  }
+}
+
+@media print {
+  body {
+    padding: 0;
+  }
+}

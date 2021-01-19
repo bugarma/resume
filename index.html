@@ -3,77 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/styles.css">
   </head>
 
   <body>
-    <div class="header">
-      <h1>任精瑋</h1>
-      <p>Aaron Jen</p>
-      <li>email: aaron821124@gmail.com</li>
-      <li>github: https://github.com/aaronjen</li>
-      <li>Blog: https://aaronjen.github.io/</li>
-    </div>
-    <div class="block">
-      <h1>Skills</h1>
-      <li>Golang</li>
-      <li>node.js</li>
-      <li>React</li>
-      <li>Kubernetes</li>
-      <li>Gitlab CI / CD</li>
-    </div>
-    <div class="block">
-      <h1>Languages</h1>
-      <li>Chinese - native</li>
-      <li>English - speaking, listening</li>
-    </div>
-    <div class="block">
-      <h1>Interset</h1>
-      <li>Guitar</li>
-      <li>Blogging</li>
-      <li>Gaming</li>
-    </div>
-    <div class="block">
-      <h1>Profile</h1>
-      <p>
-        Web application developer with 3+ years experience. Created a system from zero to thousands of users. Had experience in server deployment on Kubernetes on GCP.
-      </p>
-    </div>
-    <div class="block">
-      <h1>Experience</h1>
+    <div class="wrapper">
+      <div class="flex mb-2">
+        <div class="flex-1">
+          <div class="text-4xl">任精瑋</div>
+          <div class="text-gray-500 text-xl">Aaron Jen</div>
+        </div>
+        <div>
+          <div>Email: aaron821124@gmail.com</div>
+          <div>Github: https://github.com/aaronjen</div>
+          <div>Blog: https://aaronjen.github.io/</div>
+        </div>
+      </div>
+      
+      <div class="border-b-2 border-gray-400"></div>
+      
+      
+      <div class="flex-1 flex divide-x divide-gray-400 py-4">
 
-      <h2>Full-Stack Engineer</h2>
-      <h2>Jubo.Health 智齡科技, 2018.09 - Now</h3>
-      <p>
-        Built the nursing information system (won three national awards) for long-term care institutions.
-      </p>
-      <p>Frontend development</p>
-      <li>Developed web UI utilizing React framework. Built re-used components on top of Material UI library. Also, used recharts.js to draw professional charts to provide nursing information.</li>
-      <p>Backend development</p>
-      <li>Introduced microservice architecture to our system to get better scalability, and make system easy to deploy and test.</li>
-      <li>Developed high performance backend utilizing Golang framework(Gin, Fiber).</li>
-      <li>Wrote fast development backend utilizing node.js(express). </li>
-      <li>Wrote service to generate easliy modified and printed forms powered by Google Sheet API.</li>
-      <p>DevOps</p>
-      <li>Deployed our several servers on Kuberbetes on GCP for auto scaling and managenment.</li>
-      <li>Wrote Gitlab CI/CD to automate server deployment.</li>
+        <!-- left block -->
+        <div class="w-1/3 flex flex-col">
+          <div class="block">
+            <h1>Profile</h1>
+            <p>
+              Web application developer with 3+ years experience. Created a system from zero to thousands of users. Had experience in server deployment on Kubernetes on GCP.
+            </p>
+          </div>
+          <div class="block">
+            <h1>Skills</h1>
+            <li>Golang</li>
+            <li>node.js</li>
+            <li>React</li>
+            <li>Kubernetes</li>
+            <li>Gitlab CI / CD</li>
+          </div>
+          <div class="block">
+            <h1>Languages</h1>
+            <li>Chinese - native</li>
+            <li>English - speaking, listening</li>
+          </div>
+          <div class="block">
+            <h1>Interset</h1>
+            <li>Guitar</li>
+            <li>Blogging</li>
+            <li>Gaming</li>
+          </div>
+        </div>
+  
+        <!-- right block -->
+        <div class="flex-1">
+          <div class="block">
+            <h1>Experience</h1>
+      
+            <!-- Jubo -->
+            <h2>Full-Stack Engineer</h2>
+            <h3>Jubo.Health 智齡科技, 2018.09 - Now</h3>
+            <p>
+              Built the nursing information system (won three national awards) for long-term care institutions.
+            </p>
 
-      <h2>Software Engineer Intern</h2>
-      <h2>Bat mobile 蝙蝠移動, 2018.02 - 2018.07</h2>
-      <p>Wrote python scripts to process over one million customer data for further data analysis.</p>
-      <p>Data Processing</p>
-      <li>Extracted millions of records utilizing Python(Pandas, PyMongo).</li>
-    </div>
+            <p>Frontend development</p>
+            <li>Developed web UI utilizing React framework. Built re-used components on top of Material UI library. Also, used recharts.js to draw professional charts to provide nursing information.</li>
+            <p>Backend development</p>
+            <li>Introduced microservice architecture to our system to get better scalability, and made system easy to deploy and test.</li>
+            <li>Developed high performance backend utilizing Golang framework(Gin, Fiber).</li>
+            <li>Wrote fast development backend utilizing node.js(express). </li>
+            <li>Wrote service to generate easliy modified and printed forms by Google Sheet API.</li>
+            <p>DevOps</p>
+            <li>Deployed our several servers on Kuberbetes on GCP for auto scaling and managenment.</li>
+            <li>Wrote Gitlab CI/CD to automate server deployment.</li>
+      
+            <div class="h-4"></div>
 
-    <div class="block">
-      <h1>Education</h1>
-      <h2>Bachelor Degree, Civil Engineering Department, National Taiwan University,
-        2013 - 2017</h2>
-      <p>With a special focus on Computer Science courses as follows:</p>
-      <li>Algorithm</li>
-      <li>Data Structure and Algorithm</li>
-      <li>Object-Oriented Programming</li>
-      <li>Machine Learning</li>
-      <li>Natural Language Processin</li>
+            <!-- Intern -->
+            <h2>Software Engineer Intern</h2>
+            <h3>Bat mobile 蝙蝠移動, 2018.02 - 2018.07</h3>
+            <p>Wrote python scripts to process over one million customer data for further data analysis.</p>
+            <p>Data Processing</p>
+            <li>Extracted millions of records utilizing Python(Pandas, PyMongo).</li>
+          </div>
+      
+          <div class="block">
+            <h1>Education</h1>
+            <h3>Bachelor Degree, Civil Engineering Department, National Taiwan University,
+              2013 - 2017</h3>
+            <p>With a special focus on Computer Science courses as follows:</p>
+            <li>Algorithm</li>
+            <li>Data Structure and Algorithm</li>
+            <li>Object-Oriented Programming</li>
+            <li>Machine Learning</li>
+            <li>Natural Language Processing</li>
+          </div>
+        </div>
+  
+      </div>
     </div>
   </body>
 </html>
