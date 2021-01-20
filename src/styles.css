@@ -4,43 +4,49 @@
 
 @layer base {
   body {
-    @apply bg-gray-300 py-12;
+    @apply bg-gray-300;
   }
   h1 {
-    @apply text-2xl border-gray-400 border-b-2 pb-2 mb-2;
+    @apply text-xl border-gray-400 border-b-2 pb-2 mb-2 flex items-center space-x-2;
   }
   h2 {
     @apply text-lg;
   }
   h3 {
-    @apply mb-2 text-gray-600;
+    @apply text-gray-500 text-sm;
   }
-  li {
-    @apply text-sm px-1;
+  h4 {
+    @apply mt-2 font-medium text-gray-500;
   }
   p {
-    @apply p-1;
+    @apply py-1;
   }
 }
 
 @layer components {
   .wrapper {
     height: 297mm;
-    width: 252mm;
+    width: 210mm;
     margin: auto;
-    @apply shadow bg-gray-50 p-8 flex-col flex;
+    @apply shadow p-8 flex-col flex my-12 bg-gray-50;
   }
   .divider {
     width: 100%;
     @apply border-b-2 border-gray-600;
   }
   .block {
-    @apply pb-4 px-4;
+    @apply px-4;
   }
 }
 
 @media print {
+  .wrapper {
+    margin: 0;
+    page-break-after: auto;
+    box-shadow: none;
+    height: auto;
+  }
   body {
-    padding: 0;
+    @apply bg-gray-50;   
   }
 }
